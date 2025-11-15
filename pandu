@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduranga P. | MBA Marketing & Finance</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for aesthetic font and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f7f9fb; /* Light background for the whole page */
+        }
+        /* Style for the professional gradient button */
+        .btn-primary {
+            /* Using a clean Marketing/Finance blue-green gradient */
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%); /* Green/Teal gradient */
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+            background: linear-gradient(135deg, #047857 0%, #059669 100%);
+        }
+        /* Custom card style */
+        .card {
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="shadow-md bg-white sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-gray-900 tracking-tight">P. Panduranga</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-green-600 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-green-600 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-green-600 transition duration-300">Case Studies</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-600 transition duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <nav class="px-2 pt-2 pb-4 space-y-1 sm:px-3 flex flex-col items-start">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 w-full">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 w-full">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 w-full">Case Studies</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 w-full">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- 1. Hero Section -->
+        <section id="hero" class="pt-20 pb-32 flex flex-col md:flex-row items-center justify-between text-center md:text-left space-y-10 md:space-y-0">
+            <div class="md:w-3/5 space-y-6">
+                <p class="text-xl text-green-600 font-semibold uppercase tracking-wider">Hello, I'm Panduranga P.</p>
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
+                    <span class="block">MBA Graduate in</span>
+                    <span class="block text-green-600 mt-2">Marketing & Finance Strategy.</span>
+                </h1>
+                <p class="text-xl text-gray-500 max-w-lg mx-auto md:mx-0">
+                    A dynamic professional eager to drive business growth by integrating **data-driven market analysis with creative digital marketing solutions.**
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4 justify-center md:justify-start">
+                    <a href="#projects" class="btn-primary text-white font-semibold py-3 px-8 rounded-lg shadow-lg text-lg">
+                        View Case Studies
+                    </a>
+                    <a href="#contact" class="bg-white text-gray-800 border-2 border-gray-200 hover:border-green-500 hover:text-green-600 font-semibold py-3 px-8 rounded-lg shadow-md text-lg transition duration-300">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-2/5 flex justify-center">
+                <!-- Placeholder for a professional image or avatar -->
+                <div class="w-64 h-64 sm:w-80 sm:h-80 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden border-4 border-green-500 shadow-2xl">
+                    <img src="https://placehold.co/320x320/e2e8f0/10b981?text=Panduranga+P" alt="Panduranga P. Professional Photo" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="py-20 bg-white rounded-xl shadow-lg mb-16 px-8 sm:px-12 lg:px-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">About My Expertise</h2>
+            <div class="space-y-6 text-lg text-gray-600">
+                <p>
+                    I am an MBA graduate from VSK University, specializing in **Marketing and Finance**. My core expertise lies in **market analysis, strategic planning, and financial decision-making**, which are essential for sustainable business growth.
+                </p>
+                <p>
+                    My philosophy is centered on **integrating data-driven insights with creative marketing solutions**. My practical experience, including my roles at MORE RETAIL PRIVATE LIMITED as a Customer Service Associate and Apprenticeship Trainee, has provided me with a strong foundation in **customer engagement, operational efficiency, and inventory management**. This retail background enhances my ability to deliver results in fast-paced, customer-focused environments.
+                </p>
+                <p>
+                    I hold recent certifications in **Social Media Marketing, SEO, and AI Marketing**, demonstrating my commitment to staying current with modern digital strategies. I am proficient in using tools like **MS Excel and Google Sheets** for data analysis and reporting.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="py-20">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Core Competencies</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Skill Card 1: Digital Marketing -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-100 text-center">
+                    <svg data-lucide="line-chart" class="w-8 h-8 text-green-500 mx-auto mb-3"></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Digital Marketing</h3>
+                    <p class="text-sm text-gray-500">Social Media Marketing, Content Marketing, SEO, Email Marketing, AI Marketing.</p>
+                </div>
+                <!-- Skill Card 2: Finance & Strategy -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-100 text-center">
+                    <svg data-lucide="dollar-sign" class="w-8 h-8 text-blue-500 mx-auto mb-3"></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Finance & Analysis</h3>
+                    <p class="text-sm text-gray-500">Financial Decision-Making, Strategic Planning, Market Analysis, Budgeting.</p>
+                </div>
+                <!-- Skill Card 3: Data & Tools -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-100 text-center">
+                    <svg data-lucide="database" class="w-8 h-8 text-yellow-600 mx-auto mb-3"></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Data & Tools</h3>
+                    <p class="text-sm text-gray-500">MS Excel, Google Sheets, Data Reporting, Product Knowledge, POS Systems.</p>
+                </div>
+                <!-- Skill Card 4: Operational & Soft Skills -->
+                <div class="card bg-white p-6 rounded-xl border border-gray-100 text-center">
+                    <svg data-lucide="users" class="w-8 h-8 text-red-500 mx-auto mb-3"></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Operational Focus</h3>
+                    <p class="text-sm text-gray-500">Customer Engagement, Adaptability, Inventory Management, Problem-Solving.</p>
+                </div>
+            </div>
+            <!-- Progress Bar Example -->
+            <div class="mt-16 bg-green-50 p-6 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-4 text-green-800">My Expertise Level</h3>
+                <div class="space-y-3">
+                    <div class="text-sm font-medium text-gray-700">Strategic Marketing & Digital Focus - 90%</div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-green-600 h-2.5 rounded-full" style="width: 90%;"></div>
+                    </div>
+                    <div class="text-sm font-medium text-gray-700">Retail Operations & Financial Handling - 80%</div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-green-600 h-2.5 rounded-full" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects/Case Studies Section -->
+        <section id="projects" class="py-20 bg-white rounded-xl shadow-lg mb-16 px-8 sm:px-12 lg:px-16">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Professional Case Studies</h2>
+
+            <div class="space-y-12">
+                <!-- Case Study 1: Retail Operational Efficiency -->
+                <div class="card flex flex-col md:flex-row bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+                        <img src="https://placehold.co/400x250/059669/ffffff?text=Operational+Efficiency" alt="Operational Efficiency Mockup" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Case Study 1: POS and Inventory Optimization in Retail</h3>
+                        <p class="text-gray-600 mb-4">
+                            **Focus:** Improving financial handling accuracy and operational flow at MORE RETAIL. I managed accurate billing and cash handling through POS systems and streamlined returns/refund processes according to company policy.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Finance Handling</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">POS Systems</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Customer Service</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-green-600 font-semibold hover:text-green-800 flex items-center transition duration-300">
+                                View Detailed Analysis (Sample) <svg data-lucide="external-link" class="w-4 h-4 ml-1"></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: Digital Marketing Strategy using AI -->
+                <div class="card flex flex-col md:flex-row-reverse bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:ml-6 flex-shrink-0">
+                        <img src="https://placehold.co/400x250/10b981/ffffff?text=AI+Marketing+Strategy" alt="AI Marketing Strategy Mockup" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-2/3 md:text-right">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Case Study 2: Implementing AI-Enhanced Content Marketing</h3>
+                        <p class="text-gray-600 mb-4">
+                            **Focus:** Leveraging certifications (Master Digital Marketing with AI, AI Marketing) to develop a strategic plan for optimizing **SEO and Content Marketing** using AI tools to increase online visibility and lead generation for a small business.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4 justify-end">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">SEO & Content</span>
+                            <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded-full">AI Strategy</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Social Media</span>
+                        </div>
+                        <div class="flex space-x-3 justify-end">
+                            <a href="#" class="text-green-600 font-semibold hover:text-green-800 flex items-center transition duration-300">
+                                Strategy Document <svg data-lucide="book-open" class="w-4 h-4 ml-1"></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Note: Add more projects as needed! -->
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="py-20 text-center">
+            <h2 class="text-4xl font-bold mb-6 text-gray-900">Let's Connect</h2>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                I am actively seeking opportunities in Marketing, Finance, or Strategy. Let's discuss how my analytical skills can contribute to your team.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12">
+                <!-- Email Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 w-full max-w-sm mx-auto md:mx-0">
+                    <svg data-lucide="mail" class="w-8 h-8 text-green-500 mx-auto mb-4"></svg>
+                    <h3 class="text-xl font-semibold mb-2">Send an Email</h3>
+                    <p class="text-gray-500 mb-4">The best way to reach me for professional inquiries.</p>
+                    <a href="mailto:pandurangap789@gmail.com" class="btn-primary text-white font-semibold py-2 px-6 rounded-lg inline-block hover:opacity-90">
+                        pandurangap789@gmail.com
+                    </a>
+                </div>
+
+                <!-- LinkedIn Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 w-full max-w-sm mx-auto md:mx-0">
+                    <svg data-lucide="linkedin" class="w-8 h-8 text-green-500 mx-auto mb-4"></svg>
+                    <h3 class="text-xl font-semibold mb-2">Connect on LinkedIn</h3>
+                    <p class="text-gray-500 mb-4">View my detailed professional history and network.</p>
+                    <a href="https://linkedin.com/in/panduranga-p-0b32842a1" target="_blank" class="bg-white text-gray-800 border-2 border-gray-200 hover:border-green-500 hover:text-green-600 font-semibold py-2 px-6 rounded-lg shadow-md inline-block transition duration-300">
+                        View Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 Panduranga P. All rights reserved. | Built with HTML & Tailwind CSS.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#about" class="hover:text-green-400">About</a>
+                <a href="#projects" class="hover:text-green-400">Case Studies</a>
+                <a href="#contact" class="hover:text-green-400">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to initialize Lucide icons and handle the mobile menu
+        lucide.createIcons();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Simple script to handle form submission (replace with a real service later)
+        // Since we are not building a back-end, this simply prevents default action
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // In a real application, you would use fetch() here to send data to a service like Formspree or a cloud function.
+                const messageBox = document.createElement('div');
+                messageBox.className = 'mt-4 p-3 bg-green-100 text-green-800 rounded-lg';
+                messageBox.textContent = 'Thank you for your message! This is a demo submission. Please check the email link above.';
+                contactForm.appendChild(messageBox);
+                contactForm.reset();
+                setTimeout(() => {
+                    messageBox.remove();
+                }, 5000);
+            });
+        }
+    </script>
+
+</body>
+</html>
